@@ -1,6 +1,7 @@
 import React from "react";
 import hero from "../assets/hero.jpg";
 import { RiArrowRightSLine } from "react-icons/ri";
+import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div
@@ -18,12 +19,17 @@ const Home = () => {
             technologies like React, Tailwind, WindiCSS NodeJS HTML and CSS.
           </p>
           <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex items-center justify-center cursor-pointer rounded-md cursor-pointer bg-gradient-to-r from-cyan-500 via-cyan-500 to-blue-500">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center justify-center cursor-pointer rounded-md cursor-pointer bg-gradient-to-r from-cyan-500 via-cyan-500 to-blue-500"
+            >
               Portfolio{" "}
               <span className="group-hover:rotate-90 duration-200">
                 <RiArrowRightSLine size={25} />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div>
